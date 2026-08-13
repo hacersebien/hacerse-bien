@@ -2,7 +2,7 @@
 title: 'El miedo es la emoción que te indica que hay algo que debes aprender'
 description: 'El miedo no es un obstáculo a evitar, sino una señal proactiva y transformadora.'
 pubDate: 'Aug 12 2026'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1000'
 ---
 
 **Hook (Gancho):** ¿Sientes que el miedo te paraliza y te impide avanzar hacia eso que tanto quieres? 🛑 Detente un momento y cambia la perspectiva. El miedo no es un muro contra el que debes chocar; es una brújula.
