@@ -5,23 +5,39 @@
  */
 
 :root {
-	--accent: #556b2f;          /* Verde oliva apagado para ganchos, links y detalles */
-	--accent-dark: #3a4d1a;     /* Un tono más oscuro para cuando pasas el mouse por encima (hover) */
-	--black: #2a2e2b;           /* Texto principal: un gris carbón oscuro, más suave que el negro puro */
-	--gray: #707571;            /* Textos secundarios y fechas: gris neutro sutil */
-	--gray-light: #f2f4f2;      /* Bordes, líneas divisorias y cajas secundarias */
-	--gray-ultra-light: #fafbfa;/* Fondo sutil para las tarjetas de los posts */
-	--box-shadow: 0 4px 20px rgba(85, 107, 47, 0.06); /* Sombra muy suave para mantener el minimalismo */
+	/* PALETA MÁGICA Y CÁLIDA */
+	--accent: #d48a56;          /* Ámbar/Arcilla cálido: transmite energía suave y magia */
+	--accent-dark: #b56d3c;     /* Un tono terracota más profundo para interacciones */
+	--black: #4a4138;           /* Marrón oscuro suave: mucho más cómodo para leer que el negro puro */
+	--gray: #8c837a;            /* Gris cálido/topo para textos secundarios */
+	--gray-light: #f0ebe1;      /* Bordes color arena muy sutiles */
+	--gray-ultra-light: #fdfbf7;/* Fondo casi pergamino para resaltar las tarjetas de los artículos */
+	
+	/* EFECTOS DE COMODIDAD */
+	--box-shadow: 0 12px 40px rgba(212, 138, 86, 0.08); /* Sombra cálida y extendida (efecto de luz/flotar) */
+	--border-radius: 16px;      /* Esquinas bien redondeadas para que el sitio se sienta "blando" */
 }
+
 body {
-	font-family: 'Atkinson Hyperlegible', sans-serif; /* Tipografía limpia que viene por defecto */
-	background-color: #f7f9f7; /* Un fondo sutilmente roto, un tono hueso/arena muy suave que da paz visual */
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	background-color: #f6f3eb; /* Fondo principal color crema/avena, abraza la vista */
 	color: var(--black);
 	margin: 0;
 	padding: 0;
 	text-align: left;
+	line-height: 1.8; /* Le damos más aire al texto para que la lectura fluya relajada */
 	background-size: 100% 600px;
 	background-repeat: no-repeat;
+}
+
+/* Transiciones suaves para que la navegación se sienta fluida e intuitiva */
+a, .title, .card {
+	transition: all 0.4s ease;
+}
+
+/* Las imágenes redondeadas eliminan la rigidez */
+img {
+	border-radius: var(--border-radius);
 }
 main {
 	width: 720px;
