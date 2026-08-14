@@ -149,3 +149,44 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* ESTILOS CÁLIDOS Y CÓMODOS PARA EL HEADER DEL INICIO */
+
+.welcome-container {
+    display: flex;
+    flex-direction: column; /* Colocamos la imagen arriba del texto */
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: var(--gray-ultra-light); /* Un fondo crema muy suave para esta sección */
+    border-radius: calc(var(--border-radius) * 2); /* Esquinas extra redondeadas y blandas */
+    margin-bottom: 50px;
+    box-shadow: var(--box-shadow); /* Sombra cálida y mágica */
+}
+
+.magic-header-image {
+    width: 100%;
+    max-width: 800px; /* La imagen no debe ser gigantesca para no asustar */
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(212, 138, 86, 0.1); /* Brillo cálido que la hace flotar */
+}
+
+.welcome-text {
+    text-align: center;
+    max-width: 700px;
+}
+
+.welcome-text h1 {
+    color: var(--accent); /* Título ámbar/cálido */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: var(--gray);
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
