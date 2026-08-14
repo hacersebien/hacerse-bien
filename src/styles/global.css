@@ -190,3 +190,39 @@ hr {
     margin-bottom: 20px;
     letter-spacing: 0.5px;
 }
+/* ESTILOS PARA LOS CUADROS DE PILARES */
+.principles-grid {
+    display: grid;
+    /* Esto hace que se adapten a celular automáticamente o formen columnas en PC */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.principle-card {
+    background-color: #ffffff; /* Fondo blanco puro para que resalte sobre la web crema */
+    padding: 35px 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(74, 65, 56, 0.05); /* Sombra muy suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto mágico al pasar el mouse por encima */
+.principle-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(212, 138, 86, 0.15); /* Brillo ámbar al elevarse */
+}
+
+.principle-card h3 {
+    color: var(--accent-dark);
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.principle-card p {
+    color: var(--black);
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
