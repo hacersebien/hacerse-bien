@@ -2,7 +2,7 @@
 title: 'El Espejo del Miedo'
 description: 'El miedo no es tu enemigo, es solo una brújula que señala las ilusiones que tu ego aún defiende. Obsérvalo sin juzgar.'
 pubDate: 'Aug 14 2026'
-heroImage: '/images/portada-miedo.jpg'
+heroImage: './portada-miedo.jpg'
 ---
 
 ### El origen de la ilusión: La insuficiencia
