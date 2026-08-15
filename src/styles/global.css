@@ -5,230 +5,236 @@
  */
 
 :root {
-	/* PALETA MÁGICA Y CÁLIDA */
-	--accent: #d48a56;          /* Ámbar/Arcilla cálido: transmite energía suave y magia */
-	--accent-dark: #b56d3c;     /* Un tono terracota más profundo para interacciones */
-	--black: #4a4138;           /* Marrón oscuro suave: mucho más cómodo para leer que el negro puro */
-	--gray: #8c837a;            /* Gris cálido/topo para textos secundarios */
-	--gray-light: #f0ebe1;      /* Bordes color arena muy sutiles */
-	--gray-ultra-light: #fdfbf7;/* Fondo casi pergamino para resaltar las tarjetas de los artículos */
-	
-	/* EFECTOS DE COMODIDAD */
-	--box-shadow: 0 12px 40px rgba(212, 138, 86, 0.08); /* Sombra cálida y extendida (efecto de luz/flotar) */
-	--border-radius: 16px;      /* Esquinas bien redondeadas para que el sitio se sienta "blando" */
+    /* PALETA MÁGICA Y CÁLIDA */
+    --accent: #d48a56;          /* Ámbar/Arcilla cálido: transmite energía suave y magia */
+    --accent-dark: #b56d3c;     /* Un tono terracota más profundo para interacciones */
+    --black: #4a4138;           /* Marrón oscuro suave: mucho más cómodo para leer que el negro puro */
+    --gray: #8c837a;            /* Gris cálido/topo para textos secundarios */
+    --gray-light: #f0ebe1;      /* Bordes color arena muy sutiles */
+    --gray-ultra-light: #fdfbf7;/* Fondo casi pergamino para resaltar las tarjetas de los artículos */
+    
+    /* EFECTOS DE COMODIDAD */
+    --box-shadow: 0 12px 40px rgba(212, 138, 86, 0.08); /* Sombra cálida y extendida (efecto de luz/flotar) */
+    --border-radius: 16px;      /* Esquinas bien redondeadas para que el sitio se sienta "blando" */
 }
 
 body {
-	font-family: 'Atkinson Hyperlegible', sans-serif;
-	background-color: #f6f3eb; /* Fondo principal color crema/avena, abraza la vista */
-	color: var(--black);
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	line-height: 1.8; /* Le damos más aire al texto para que la lectura fluya relajada */
-	background-size: 100% 600px;
-	background-repeat: no-repeat;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: #f6f3eb; /* Fondo principal color crema/avena, abraza la vista */
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.8; /* Le damos más aire al texto para que la lectura fluya relajada */
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
 }
 
 /* Transiciones suaves para que la navegación se sienta fluida e intuitiva */
 a, .title, .card {
-	transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 /* Las imágenes redondeadas eliminan la rigidez */
 img {
-	border-radius: var(--border-radius);
+    border-radius: var(--border-radius);
 }
+
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+    width: 720px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+    padding: 3em 1em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5rem 0;
+    color: var(--black); /* Modificado a var(--black) para que no tire error rgb */
+    line-height: 1.2;
 }
-h1 {
-	font-size: 3.052em;
+
+h1 { font-size: 3.052em; }
+h2 { font-size: 2.441em; }
+h3 { font-size: 1.953em; }
+h4 { font-size: 1.563em; }
+h5 { font-size: 1.25em; }
+
+strong, b { font-weight: 700; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent); }
+
+p { margin-bottom: 1em; }
+.prose p { margin-bottom: 2em; }
+
+textarea, input {
+    font-size: 16px;
+    width: 100%;
 }
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
-a {
-	color: var(--accent);
-}
-a:hover {
-	color: var(--accent);
-}
-p {
-	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
+
+table { width: 100%; }
+
 img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+    padding: 2px 5px;
+    background-color: var(--gray-light); /* Modificado a variable directa */
+    border-radius: 2px;
 }
+
 pre {
-	padding: 1.5em;
-	border-radius: 8px;
+    padding: 1.5em;
+    border-radius: 8px;
 }
-pre > code {
-	all: unset;
-}
+pre > code { all: unset; }
+
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0;
-	font-size: 1.333em;
+    border-left: 4px solid var(--accent);
+    padding: 0 0 0 20px;
+    margin: 0;
+    font-size: 1.333em;
 }
+
 hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+    border: none;
+    border-top: 1px solid var(--gray-light); /* Modificado a variable directa */
 }
+
 @media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+    body { font-size: 18px; }
+    main { padding: 1em; }
 }
 
 .sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
-/* ESTILOS CÁLIDOS Y CÓMODOS PARA EL HEADER DEL INICIO */
+/* ============================================================== */
+/* ESTILOS EDITORIALES PARA EL HEADER (INICIO - LADO A LADO)      */
+/* ============================================================== */
 
 .welcome-container {
     display: flex;
-    flex-direction: column; /* Colocamos la imagen arriba del texto */
+    flex-direction: row; 
     align-items: center;
-    gap: 30px;
-    padding: 60px 20px;
-    background-color: var(--gray-ultra-light); /* Un fondo crema muy suave para esta sección */
-    border-radius: calc(var(--border-radius) * 2); /* Esquinas extra redondeadas y blandas */
-    margin-bottom: 50px;
-    box-shadow: var(--box-shadow); /* Sombra cálida y mágica */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+    margin-bottom: 70px;
+    background-color: transparent; 
+    box-shadow: none; 
+}
+
+.welcome-text {
+    flex: 1;
+    text-align: left; 
+    max-width: 500px;
+}
+
+.welcome-text h1 {
+    color: var(--accent-dark); 
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Estilos para el menú bajo el texto */
+.home-nav {
+    font-size: 1.3rem;
+    color: var(--accent-dark);
+}
+
+.home-nav a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.home-nav a:first-child {
+    margin-left: 0;
+}
+
+.home-nav a:hover {
+    color: var(--accent);
+}
+
+.welcome-image {
+    flex: 1.2;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .magic-header-image {
     width: 100%;
-    max-width: 800px; /* La imagen no debe ser gigantesca para no asustar */
+    max-width: 650px; 
     height: auto;
     border-radius: var(--border-radius);
-    box-shadow: 0 10px 40px rgba(212, 138, 86, 0.1); /* Brillo cálido que la hace flotar */
+    box-shadow: 0 15px 40px rgba(74, 65, 56, 0.15); 
 }
 
-.welcome-text {
-    text-align: center;
-    max-width: 700px;
+/* Responsivo: Si la pantalla es chica (celular), se apilan */
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-text {
+        text-align: center;
+    }
+    .welcome-image {
+        justify-content: center;
+    }
 }
 
-.welcome-text h1 {
-    color: var(--accent); /* Título ámbar/cálido */
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
+/* ============================================================== */
+/* ESTILOS PARA LOS CUADROS / CITAS CLICKABLES                    */
+/* ============================================================== */
 
-.tagline {
-    font-size: 1.3rem;
-    color: var(--gray);
-    font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-}
-/* ESTILOS PARA LOS CUADROS DE PILARES */
 .principles-grid {
     display: grid;
-    /* Esto hace que se adapten a celular automáticamente o formen columnas en PC */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
 
 .principle-card {
-    background-color: #ffffff; /* Fondo blanco puro para que resalte sobre la web crema */
+    background-color: #ffffff; 
     padding: 35px 25px;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(74, 65, 56, 0.05); /* Sombra muy suave */
+    box-shadow: 0 4px 20px rgba(74, 65, 56, 0.05); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto mágico al pasar el mouse por encima */
 .principle-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(212, 138, 86, 0.15); /* Brillo ámbar al elevarse */
+    box-shadow: 0 15px 30px rgba(212, 138, 86, 0.15); 
 }
 
-.principle-card h3 {
-    color: var(--accent-dark);
-    margin-top: 0;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.principle-card p {
-    color: var(--black);
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.6;
-}
-/* AJUSTES PARA LAS TARJETAS DE CITAS CLICKABLES */
 a.clickable {
-    text-decoration: none; /* Evita que el texto parezca un enlace azul por defecto */
+    text-decoration: none; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,9 +243,11 @@ a.clickable {
 .principle-card blockquote {
     margin: 0;
     font-size: 1.15rem;
-    font-style: italic; /* Letra cursiva para la cita */
+    font-style: italic; 
     color: var(--black);
     line-height: 1.6;
+    border-left: none; /* Quitamos la barra lateral por defecto para que sea más limpio en la tarjeta */
+    padding: 0;
 }
 
 .principle-card cite {
@@ -248,5 +256,5 @@ a.clickable {
     font-size: 0.95rem;
     font-weight: bold;
     color: var(--accent-dark);
-    text-align: right; /* Alineamos el autor a la derecha */
+    text-align: right; 
 }

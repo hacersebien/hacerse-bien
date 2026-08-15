@@ -14,19 +14,24 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
     		<div class="welcome-container">
-        		<img 
-            		src="/images/header-magic-magica.png" 
-            		alt="Fusión mágica de introspección y presencia" 
-            		class="magic-header-image"
-        		/>
-        
+        		<!-- Columna Izquierda: Texto y Navegación -->
         		<div class="welcome-text">
-            		<h1>Bienvenido a Hacerse Bien 👁️‍🗨️</h1>
-            		<p class="tagline">Desarrollo personal, desapego del ego, y retorno al momento presente.</p>
-            		<p>
-                		Este es un espacio dedicado a la auto-observación, la gestión emocional y el liderazgo personal. 
-                		Naciste completo y abundante. Aquí venimos a recordar quién eres realmente.
-            		</p>
+           			<h1>Hacerse Bien 👁️‍🗨️</h1>
+           			<p class="tagline">Desarrollo personal, desapego del ego,<br>y retorno al momento presente.</p>
+            
+           			<!-- Los botones/enlaces debajo de la descripción -->
+            		<nav class="home-nav">
+                		<a href="/">Home</a> | <a href="/blog">Blog</a> | <a href="/about">About</a> | <a href="/contact">Contact</a>
+            		</nav>
+        		</div>
+        
+        		<!-- Columna Derecha: La Imagen Mágica -->
+        		<div class="welcome-image">
+            		<img 
+                		src="/images/header-magic-magica.png" 
+                		alt="Fusión mágica de introspección y presencia" 
+                		class="magic-header-image"
+            		/>
         		</div>
     		</div>
 <!-- SECCIÓN DE CITAS INSPIRADORAS (ENLACES) -->
