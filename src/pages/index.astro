@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -11,8 +10,30 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<!-- La barra superior por defecto (la dejamos limpia) -->
+		<!-- Eliminamos el componente Header de aquí para no tener menús repetidos -->
 		
+		<main>
+			<!-- CABECERA LADO A LADO -->
+			<div class="welcome-container">
+				<!-- Columna Izquierda: Texto y Navegación -->
+				<div class="welcome-text">
+					<h1>Hacerse Bien 👁️‍🗨️</h1>
+					<p class="tagline">Desarrollo personal, desapego del ego,<br>y retorno al momento presente.</p>
+					
+					<nav class="home-nav">
+						<a href="/">Home</a> | <a href="/blog">Blog</a> | <a href="/about">About</a>
+					</nav>
+				</div>
+				
+				<!-- Columna Derecha: La Imagen Mágica -->
+				<div class="welcome-image">
+					<img 
+						src="/images/header-magic-magica.png" 
+						alt="Fusión mágica de introspección y presencia" 
+						class="magic-header-image"
+					/>
+				</div>
+			</div>
 
 			<!-- SECCIÓN DE CITAS INSPIRADORAS (ENLACES) -->
 			<section class="principles-grid">

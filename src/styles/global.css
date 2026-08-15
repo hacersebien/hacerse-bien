@@ -41,7 +41,7 @@ img {
 }
 
 main {
-    width: 1100px;
+    width: 1200px; /* Ampliado para que quepan los 4 cuadros con el auto-fit */
     max-width: calc(100% - 2em);
     margin: auto;
     padding: 3em 1em;
@@ -142,7 +142,7 @@ hr {
 .welcome-text {
     flex: 1;
     text-align: left; 
-    max-width: 600px;
+    max-width: 600px; /* Ampliado para que el ojo no salte a la segunda línea */
 }
 
 .welcome-text h1 {
