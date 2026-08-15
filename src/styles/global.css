@@ -41,7 +41,7 @@ img {
 }
 
 main {
-    width: 1000px;
+    width: 1100px;
     max-width: calc(100% - 2em);
     margin: auto;
     padding: 3em 1em;
@@ -142,7 +142,7 @@ hr {
 .welcome-text {
     flex: 1;
     text-align: left; 
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .welcome-text h1 {
@@ -219,7 +219,11 @@ hr {
     gap: 30px;
     margin-bottom: 60px;
 }
-
+@media (max-width: 768px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .principle-card {
     background-color: #ffffff; 
     padding: 35px 25px;
