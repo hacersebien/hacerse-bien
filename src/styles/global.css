@@ -226,3 +226,27 @@ hr {
     font-size: 1.05rem;
     line-height: 1.6;
 }
+/* AJUSTES PARA LAS TARJETAS DE CITAS CLICKABLES */
+a.clickable {
+    text-decoration: none; /* Evita que el texto parezca un enlace azul por defecto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principle-card blockquote {
+    margin: 0;
+    font-size: 1.15rem;
+    font-style: italic; /* Letra cursiva para la cita */
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.principle-card cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--accent-dark);
+    text-align: right; /* Alineamos el autor a la derecha */
+}
