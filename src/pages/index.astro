@@ -1,8 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
@@ -11,45 +11,52 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<!-- La barra superior por defecto (la dejamos limpia) -->
 		<Header />
+		
 		<main>
-    		<div class="welcome-container">
-        		<!-- Columna Izquierda: Texto y Navegación -->
-        		<div class="welcome-text">
-           			<h1>Hacerse Bien 👁️‍🗨️</h1>
-           			<p class="tagline">Desarrollo personal, desapego del ego,<br>y retorno al momento presente.</p>
-            
-           			<!-- Los botones/enlaces debajo de la descripción -->
-            		<nav class="home-nav">
-                		<a href="/">Home</a> | <a href="/blog">Blog</a> | <a href="/about">About</a> | <a href="/contact">Contact</a>
-            		</nav>
-        		</div>
-        
-        		<!-- Columna Derecha: La Imagen Mágica -->
-        		<div class="welcome-image">
-            		<img 
-                		src="/images/header-magic-magica.png" 
-                		alt="Fusión mágica de introspección y presencia" 
-                		class="magic-header-image"
-            		/>
-        		</div>
-    		</div>
-<!-- SECCIÓN DE CITAS INSPIRADORAS (ENLACES) -->
-    <section class="principles-grid">
-        <a href="/blog/el-miedo/" class="principle-card clickable">
-            <blockquote>"Aquello a lo que te resistes, persiste. Lo que aceptas, te transforma."</blockquote>
-            <cite>— Carl Jung</cite>
-        </a>
-        <a href="/blog/el-mito-del-valor/" class="principle-card clickable">
-            <blockquote>"No eres una gota en el océano. Eres el océano entero en una gota."</blockquote>
-            <cite>— Rumi</cite>
-        </a>
-        <a href="/blog/el-poder-del-presente/" class="principle-card clickable">
-            <blockquote>"Date cuenta profundamente de que el momento presente es todo lo que tienes."</blockquote>
-            <cite>— Eckhart Tolle</cite>
-        </a>
-        <a href="/blog/responsabilidad-total/" class="principle-card clickable">
-            <blockquote>"Entre el estímulo y la respuesta hay un espacio. En ese espacio está nuestro poder de elegir."</blockquote>
-            <cite>— Viktor Frankl</cite>
-        </a>
-    </section>
+			<!-- CABECERA LADO A LADO -->
+			<div class="welcome-container">
+				<!-- Columna Izquierda: Texto y Navegación -->
+				<div class="welcome-text">
+					<h1>Hacerse Bien 👁️‍🗨️</h1>
+					<p class="tagline">Desarrollo personal, desapego del ego,<br>y retorno al momento presente.</p>
+					
+					<nav class="home-nav">
+						<a href="/">Home</a> | <a href="/blog">Blog</a> | <a href="/about">About</a>
+					</nav>
+				</div>
+				
+				<!-- Columna Derecha: La Imagen Mágica -->
+				<div class="welcome-image">
+					<img 
+						src="/images/header-magic-magica.png" 
+						alt="Fusión mágica de introspección y presencia" 
+						class="magic-header-image"
+					/>
+				</div>
+			</div>
+
+			<!-- SECCIÓN DE CITAS INSPIRADORAS (ENLACES) -->
+			<section class="principles-grid">
+				<a href="/blog/el-miedo/" class="principle-card clickable">
+					<blockquote>"Aquello a lo que te resistes, persiste. Lo que aceptas, te transforma."</blockquote>
+					<cite>— Carl Jung</cite>
+				</a>
+				<a href="/blog/el-mito-del-valor/" class="principle-card clickable">
+					<blockquote>"No eres una gota en el océano. Eres el océano entero en una gota."</blockquote>
+					<cite>— Rumi</cite>
+				</a>
+				<a href="/blog/el-poder-del-presente/" class="principle-card clickable">
+					<blockquote>"Date cuenta profundamente de que el momento presente es todo lo que tienes."</blockquote>
+					<cite>— Eckhart Tolle</cite>
+				</a>
+				<a href="/blog/responsabilidad-total/" class="principle-card clickable">
+					<blockquote>"Entre el estímulo y la respuesta hay un espacio. En ese espacio está nuestro poder de elegir."</blockquote>
+					<cite>— Viktor Frankl</cite>
+				</a>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
