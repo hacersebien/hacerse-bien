@@ -3,7 +3,7 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 :root {
     /* PALETA MÁGICA Y CÁLIDA */
     --accent: #d48a56;          /* Ámbar/Arcilla cálido: transmite energía suave y magia */
@@ -48,8 +48,9 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif; /* Magia editorial para los títulos */
     margin: 0 0 0.5rem 0;
-    color: var(--black); /* Modificado a var(--black) para que no tire error rgb */
+    color: var(--black);
     line-height: 1.2;
 }
 
@@ -245,12 +246,13 @@ a.clickable {
 }
 
 .principle-card blockquote {
+    font-family: 'Lora', serif; /* Letra de libro para las citas */
     margin: 0;
     font-size: 1.15rem;
     font-style: italic; 
     color: var(--black);
     line-height: 1.6;
-    border-left: none; /* Quitamos la barra lateral por defecto para que sea más limpio en la tarjeta */
+    border-left: none;
     padding: 0;
 }
 
