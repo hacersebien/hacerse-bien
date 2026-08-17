@@ -16,49 +16,35 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				/* Ancho óptimo de lectura para artículos */
-				width: 800px; 
+				/* Le damos un poquito más de ancho para que el lado a lado respire bien */
+				width: 900px; 
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 3em 1em;
 			}
 			
-			.hero-image {
-				width: 100%;
-			}
-			
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: var(--border-radius);
-				/* Le damos la misma sombra mágica que al inicio */
-				box-shadow: 0 15px 40px rgba(74, 65, 56, 0.15); 
-				width: 100%;
-				aspect-ratio: 16 / 9;
-				object-fit: cover;
-			}
-			
 			.prose {
 				width: 100%;
-				max-width: 720px;
+				max-width: 800px;
 				margin: auto;
 				padding: 2em 0;
 				color: var(--black);
 			}
 			
+			/* 1. Título arriba y alineado a la izquierda */
 			.title {
 				margin-bottom: 2em;
-				padding: 1em 0;
-				text-align: center; /* Títulos centrados y elegantes */
+				padding: 0;
+				text-align: left; 
 				line-height: 1;
 			}
 			
 			.title h1 {
-				margin: 0 0 0.5em 0;
+				margin: 0 0 0.3em 0;
 				color: var(--accent-dark);
 				font-weight: bold;
-				font-size: 2.8rem;
-				line-height: 1.2;
+				font-size: 3rem;
+				line-height: 1.1;
 			}
 			
 			.date {
@@ -72,12 +58,45 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				font-size: 0.9em;
 			}
 
-			/* Separador sutil debajo del título */
 			hr {
 				border: none;
 				border-top: 1px solid var(--gray-light);
-				margin: 2em auto;
-				width: 50%;
+				margin: 1.5em 0 2.5em 0;
+				width: 100%;
+			}
+
+			/* 2. La magia del texto envolvente (Float) */
+			.hero-image {
+				float: left; /* Empuja la imagen a la izquierda */
+				width: 45%; /* La imagen ocupa un poco menos de la mitad del espacio */
+				margin-right: 2.5em; /* Espacio generoso para que el texto no la toque */
+				margin-bottom: 1.5em; /* Espacio para que el texto de abajo no se pegue */
+			}
+			
+			.hero-image img {
+				display: block;
+				border-radius: var(--border-radius);
+				box-shadow: 0 15px 40px rgba(74, 65, 56, 0.15); 
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			/* Limpiador invisible para que el contenido no se desborde */
+			.prose::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/* Responsivo: En celular (pantalla estrecha), volvemos a poner la imagen arriba y texto abajo */
+			@media (max-width: 768px) {
+				.hero-image {
+					float: none;
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 2em;
+				}
 			}
 		</style>
 	</head>
@@ -87,12 +106,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		
 		<main>
 			<article>
-				<div class="hero-image">
-					<!-- Reemplazamos <img> por <Image /> de Astro -->
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} />}
-				</div>
 				<div class="prose">
+					<!-- El título ahora es lo primero que aparece -->
 					<div class="title">
+						<h1>{title}</h1>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
@@ -103,9 +120,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 								)
 							}
 						</div>
-						<h1>{title}</h1>
 						<hr />
 					</div>
+
+					<!-- La imagen flotando a la izquierda -->
+					<div class="hero-image">
+						{heroImage && <Image width={800} height={800} src={heroImage} alt={title} />}
+					</div>
+					
+					<!-- El texto (slot) envuelve a la imagen de forma natural -->
 					<slot />
 				</div>
 			</article>
