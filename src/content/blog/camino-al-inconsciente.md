@@ -2,7 +2,7 @@
 title: 'Conócete a ti mismo: El camino al inconsciente'
 description: 'Explorar tu mundo interior y conocer tu inconsciente es la única vía real para desarmar el ego y encontrar una paz inquebrantable.'
 pubDate: 'Aug 24 2026'
-heroImage: '/images/portada-inconsciente.jpg'
+heroImage: './portada-inconsciente.jpg'
 ---
 
 ### La huida hacia el exterior
