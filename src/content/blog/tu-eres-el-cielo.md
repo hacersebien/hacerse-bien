@@ -21,24 +21,24 @@ Cuando te sientas inseguro o estresado, observa ese pensamiento como una nube pa
 
 ### El tiempo psicológico y la creación de tormentas
 
-¿De dónde vienen estas nubes oscuras? La gran mayoría son creadas por una ilusión que controlamos mal. El problema surge cuando caemos en el tiempo psicológico, el cual nos arranca del ahora y nos mantiene viviendo físicamente en un lugar, pero mentalmente en cualquier otro[cite: 6]. Tu mente viaja al pasado para reciclar viejos dolores o se proyecta ansiosamente hacia el futuro buscando una falsa seguridad o anticipando catástrofes que no han ocurrido[cite: 6].
+¿De dónde vienen estas nubes oscuras? La gran mayoría son creadas por una ilusión que controlamos mal. El problema surge cuando caemos en el tiempo psicológico, el cual nos arranca del ahora y nos mantiene viviendo físicamente en un lugar, pero mentalmente en cualquier otro. Tu mente viaja al pasado para reciclar viejos dolores o se proyecta ansiosamente hacia el futuro buscando una falsa seguridad o anticipando catástrofes que no han ocurrido.
 
-Cada vez que te culpas por lo que hiciste ayer o te aterras por lo que pueda pasar mañana, estás fabricando nubes tormentosas innecesarias que tapan tu claridad presente. Es vital aprender a diferenciar esto: la mente es una herramienta fantástica para organizar el día y establecer horarios, pero se convierte en una prisión cuando domina tu estado emocional mediante el tiempo psicológico[cite: 6].
+Cada vez que te culpas por lo que hiciste ayer o te aterras por lo que pueda pasar mañana, estás fabricando nubes tormentosas innecesarias que tapan tu claridad presente. Es vital aprender a diferenciar esto: la mente es una herramienta fantástica para organizar el día y establecer horarios, pero se convierte en una prisión cuando domina tu estado emocional mediante el tiempo psicológico.
 
 ### El poder de la auto-observación y el espacio
 
-El verdadero antídoto contra el miedo es enfocarte en la responsabilidad[cite: 6]. Y la mayor responsabilidad que tienes contigo mismo es recuperar tu posición de observador imparcial[cite: 6].
+El verdadero antídoto contra el miedo es enfocarte en la responsabilidad. Y la mayor responsabilidad que tienes contigo mismo es recuperar tu posición de observador imparcial.
 
-Cuando un pensamiento limitante aparezca ("no soy suficiente", "me van a rechazar", "todo va a salir mal"), no luches contra él[cite: 6]. Aquello a lo que te resistes, persiste[cite: 6]. En lugar de pelear, da un paso mental hacia atrás. Obsérvalo con curiosidad, sin juzgarlo. Date cuenta de que, si puedes observar el pensamiento, significa que tú no eres el pensamiento. Eres la consciencia silenciosa que lo está mirando.
+Cuando un pensamiento limitante aparezca ("no soy suficiente", "me van a rechazar", "todo va a salir mal"), no luches contra él. Aquello a lo que te resistes, persiste. En lugar de pelear, da un paso mental hacia atrás. Obsérvalo con curiosidad, sin juzgarlo. Date cuenta de que, si puedes observar el pensamiento, significa que tú no eres el pensamiento. Eres la consciencia silenciosa que lo está mirando.
 
-Entre cualquier estímulo y tu respuesta, existe un pequeño espacio, y en ese preciso milisegundo de consciencia es donde reside todo tu poder[cite: 6]. Aprender a habitar ese espacio te permite dejar de reaccionar en piloto automático a cada nube que pasa[cite: 6].
+Entre cualquier estímulo y tu respuesta, existe un pequeño espacio, y en ese preciso milisegundo de consciencia es donde reside todo tu poder. Aprender a habitar ese espacio te permite dejar de reaccionar en piloto automático a cada nube que pasa.
 
 ### Prácticas para despejar tu cielo interior
 
 Para integrar este desapego en tu vida diaria y salir del modo automático, te propongo estas tres prácticas fundamentales:
 
 * **Desidentificación verbal:** Cambia radicalmente la forma en que te hablas. En lugar de decir "estoy ansioso" o "estoy enojado" (lo cual te fusiona con la nube), di "estoy notando que hay ansiedad en mí" o "estoy observando un pensamiento de enojo". Esta sutil separación crea un espacio protector entre tu verdadera esencia (el cielo) y la emoción temporal (la nube).
-* **La pausa consciente:** Antes de reaccionar impulsivamente ante un estímulo, detente tres segundos. Observa la emoción subir y bajar. Recuerda que no tienes que actuar bajo el dictado de cada emoción que sientes. Déjala pasar por tu cielo mental sin aferrarte a ella[cite: 6].
-* **Anclaje en el presente:** Tu única y más importante misión diaria es salir del modo automático, volver al momento presente y recordar quién eres realmente: un ser que no necesita validación externa para existir en plenitud[cite: 6]. Dedica momentos de tu día simplemente a sentir tu respiración, vaciando el momento presente de los conflictos ilusorios de la mente[cite: 6].
+* **La pausa consciente:** Antes de reaccionar impulsivamente ante un estímulo, detente tres segundos. Observa la emoción subir y bajar. Recuerda que no tienes que actuar bajo el dictado de cada emoción que sientes. Déjala pasar por tu cielo mental sin aferrarte a ella.
+* **Anclaje en el presente:** Tu única y más importante misión diaria es salir del modo automático, volver al momento presente y recordar quién eres realmente: un ser que no necesita validación externa para existir en plenitud. Dedica momentos de tu día simplemente a sentir tu respiración, vaciando el momento presente de los conflictos ilusorios de la mente. El momento presente está vacío de problemas por sí solo.
 
-La próxima vez que una tormenta mental amenace con robarte la calma, sonríe internamente. Reconoce la nube, acéptala sin pelear, y recuerda tu inmensidad. Eres el cielo, y nada irreal existe[cite: 6].
+La próxima vez que una tormenta mental amenace con robarte la calma, sonríe internamente. Reconoce la nube, acéptala sin pelear, y recuerda tu inmensidad. Eres el cielo, y nada irreal existe.
