@@ -1,0 +1,68 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title="Política de Cookies | Hacerse Bien" description="Información sobre el uso de cookies en Hacerse Bien." />
+		<style>
+			main {
+				width: 900px; 
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			.prose {
+				width: 100%;
+				max-width: 800px;
+				margin: auto;
+				padding: 2em 0;
+				color: var(--black);
+			}
+			h1 {
+				margin-bottom: 1em;
+				color: var(--accent-dark);
+				font-size: 2.5rem;
+			}
+			h2 {
+				margin-top: 1.5em;
+				margin-bottom: 0.5em;
+				color: var(--accent);
+				font-size: 1.5rem;
+			}
+			p, li {
+				line-height: 1.6;
+				margin-bottom: 1em;
+			}
+			ul {
+				padding-left: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="prose">
+				<h1>Política de Cookies</h1>
+				
+				<h2>¿Qué son las cookies?</h2>
+				<p>Como es práctica común en casi todos los sitios web profesionales, Hacerse Bien utiliza cookies, que son pequeños archivos que se descargan en tu computadora o dispositivo móvil para mejorar tu experiencia de navegación y lectura.</p>
+				
+				<h2>Cómo usamos las cookies</h2>
+				<p>Utilizamos cookies por una variedad de razones que se detallan a continuación. En la mayoría de los casos no hay opciones estándar de la industria para deshabilitar las cookies sin deshabilitar por completo la funcionalidad y las características que agregan a este sitio.</p>
+				
+				<h2>Las cookies que configuramos</h2>
+				<ul>
+					<li><strong>Cookies de rendimiento y análisis:</strong> Nos ayudan a entender cómo los visitantes interactúan con el blog, qué artículos se leen más y cómo podemos mejorar la estructura editorial.</li>
+					<li><strong>Cookies de publicidad de terceros:</strong> Utilizamos servicios de terceros de confianza, como Google AdSense. Google utiliza cookies para mostrar anuncios relevantes basados en tus visitas anteriores a este y otros sitios web. Esto limita la cantidad de veces que ves el mismo anuncio y ayuda a medir la efectividad de las campañas.</li>
+				</ul>
+				
+				<h2>Desactivar las cookies</h2>
+				<p>Puedes evitar la configuración de cookies ajustando las opciones directamente en tu navegador web (consulta la "Ayuda" de tu navegador para saber cómo hacerlo). Ten en cuenta que deshabilitar las cookies afectará la funcionalidad de este y muchos otros sitios web que visites.</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

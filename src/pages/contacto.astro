@@ -1,0 +1,63 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title="Contacto | Hacerse Bien" description="Ponte en contacto con el creador de Hacerse Bien." />
+		<style>
+			main {
+				width: 900px; 
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			.prose {
+				width: 100%;
+				max-width: 800px;
+				margin: auto;
+				padding: 2em 0;
+				color: var(--black);
+			}
+			h1 {
+				margin-bottom: 1em;
+				color: var(--accent-dark);
+				font-size: 2.5rem;
+			}
+			p {
+				line-height: 1.6;
+				margin-bottom: 1em;
+			}
+			.contact-card {
+				background-color: #fcfcfc;
+				border: 1px solid var(--gray-light);
+				border-radius: 8px;
+				padding: 2em;
+				margin-top: 2em;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+			}
+			.contact-card p {
+				margin-bottom: 0.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="prose">
+				<h1>Contacto</h1>
+				<p>La introspección y el desarrollo personal son caminos que no tenemos que recorrer solos. Si tienes alguna pregunta sobre los artículos, deseas discutir alguna idea de los cuadernos H10, o tienes consultas relacionadas con el uso de datos y la privacidad del sitio, estoy a tu total disposición.</p>
+				
+				<div class="contact-card">
+					<p><strong>Responsable:</strong> Matías Conejeros</p>
+					<p><strong>Ubicación:</strong> Sector Las Canchas, Talcahuano, Chile.</p>
+					<p><strong>Correo electrónico:</strong> hola@hacersebien.com</p>
+					<p><strong>Instagram:</strong> <a href="https://instagram.com/hacersebien" target="_blank">@hacersebien</a></p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

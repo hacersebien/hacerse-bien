@@ -3,26 +3,41 @@ const today = new Date();
 ---
 
 <footer>
-&copy; {today.getFullYear()} Hacerse Bien | Matías. Todos los derechos reservados.
+	<div class="legal-links">
+		<a href="/privacidad">Política de Privacidad</a> | 
+		<a href="/cookies">Política de Cookies</a> | 
+		<a href="/contacto">Contacto</a>
+	</div>
+	<p>&copy; {today.getFullYear()} Hacerse Bien | Matías. Todos los derechos reservados.</p>
 </footer>
+
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		padding: 3em 1em;
+		margin-top: 4em;
+		color: var(--gray);
 		text-align: center;
+		border-top: 1px solid var(--gray-light);
 	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
+	
+	.legal-links {
+		margin-bottom: 1.5em;
+		font-size: 0.9em;
 	}
-	.social-links a {
+	
+	.legal-links a {
+		color: var(--gray);
 		text-decoration: none;
-		color: rgb(var(--gray));
+		margin: 0 0.8em;
+		transition: color 0.2s ease;
 	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+	
+	.legal-links a:hover {
+		color: var(--accent-dark);
+	}
+	
+	p {
+		margin: 0;
+		font-size: 0.85em;
 	}
 </style>
