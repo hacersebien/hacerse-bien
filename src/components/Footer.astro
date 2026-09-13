@@ -11,6 +11,92 @@ const today = new Date();
 	<p>&copy; {today.getFullYear()} Hacerse Bien | Matías. Todos los derechos reservados.</p>
 </footer>
 
+<!-- Banner de Cookies -->
+<div id="cookie-banner" class="cookie-banner hidden">
+    <p>
+        Utilizamos cookies propias y de terceros para personalizar el contenido, analizar nuestro tráfico y mostrar anuncios relevantes. 
+        Al continuar navegando, aceptas nuestra <a href="/cookies">Política de Cookies</a>.
+    </p>
+    <button id="accept-cookies" class="cookie-btn">Aceptar</button>
+</div>
+
+<style>
+    .cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 -2px 15px rgba(0,0,0,0.2);
+        z-index: 9999;
+        font-size: 0.9em;
+        box-sizing: border-box;
+    }
+    .cookie-banner.hidden {
+        display: none;
+    }
+    .cookie-banner p {
+        margin: 0;
+        max-width: 800px;
+        line-height: 1.4;
+    }
+    .cookie-banner a {
+        color: var(--accent, #d4a373);
+        text-decoration: underline;
+    }
+    .cookie-btn {
+        background-color: var(--accent, #d4a373);
+        color: #fff;
+        border: none;
+        padding: 0.6rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 1.5rem;
+        transition: background-color 0.2s ease;
+        white-space: nowrap;
+    }
+    .cookie-btn:hover {
+        background-color: var(--accent-dark, #b58555);
+    }
+    @media (max-width: 768px) {
+        .cookie-banner {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+            padding: 1.5rem 1rem;
+        }
+        .cookie-btn {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+</style>
+
+<script>
+    // Script para manejar la lógica de aceptación
+    document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+
+        // Verifica si el usuario ya aceptó las cookies previamente
+        if (!localStorage.getItem('cookiesAccepted')) {
+            banner.classList.remove('hidden');
+        }
+
+        // Acción al hacer clic en "Aceptar"
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            banner.classList.add('hidden');
+        });
+    });
+</script>
+
 <style>
 	footer {
 		padding: 3em 1em;
