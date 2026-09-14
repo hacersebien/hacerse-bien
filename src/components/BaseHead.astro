@@ -29,9 +29,7 @@ const { title, description, image = FallbackImage } = Astro.props;
 	title={SITE_TITLE}
 	href={new URL('rss.xml', Astro.site)}
 />
-
 <meta name="generator" content={Astro.generator} />
-
 <Font cssVariable="--font-atkinson" preload />
 
 <!-- Canonical URL -->
@@ -39,6 +37,7 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
+<meta name="title" content={title} />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
@@ -49,4 +48,10 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="og:image" content={new URL(image.src, Astro.url)} />
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<!-- Google AdSense (Pega tu script de verificación justo debajo de esta línea cuando lo tengas) -->
